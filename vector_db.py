@@ -41,7 +41,7 @@ class QdrantStorage:
             with_payload=True
         )
 
-        # 🔥 THIS IS THE IMPORTANT PART
+        
         points = response.points if hasattr(response, "points") else response
 
         contexts = []
@@ -64,5 +64,5 @@ class QdrantStorage:
         }
 
 
-# ✅ SINGLE GLOBAL INSTANCE
+
 store = QdrantStorage()
